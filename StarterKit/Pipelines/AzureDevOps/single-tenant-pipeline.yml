@@ -4,10 +4,10 @@ variables:
   PAC_DEFINITIONS_FOLDER: .//Definitions
 
   # Use the plain text name of each service connection as a reference
-  devServiceConnection: "sc-epac-dev"
-  tenantPlanServiceConnection: "sc-epac-plan-tenant"
-  tenantDeployServiceConnection: "sc-epac-prod-tenant"
-  tenantRolesServiceConnection: "sc-epac-roles-tenant"
+  devServiceConnection: "dt-enterprise-security-ado"
+  tenantPlanServiceConnection: "dt-enterprise-security-ado" #Setup dedicated account in a prod env and don't leverage a single SP for everything. Align to zero trust. 
+  tenantDeployServiceConnection: "dt-enterprise-security-ado" #Setup dedicated account in a prod env and don't leverage a single SP for everything. Align to zero trust. 
+  tenantRolesServiceConnection: "dt-enterprise-security-ado" #Setup dedicated account in a prod env and don't leverage a single SP for everything. Align to zero trust. 
 
   # System.Debug: true
 
